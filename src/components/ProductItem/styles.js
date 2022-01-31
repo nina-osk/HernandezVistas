@@ -1,28 +1,21 @@
 import {   StyleSheet  } from 'react-native';
   
 const styles = StyleSheet.create({
-    sectionContainer: {
+    container: {
       flex:1,
-      flexGrow:0.3,
+      height:'100%',
       borderRadius:6,
       margin:15,
     },
-    sectionTouchable: {
-      flex: 1,
-      borderRadius:6,
-      shadowColor: 'black',
-      shadowOpacity:0.26,
-      shadowOffset:{width:0,height:2},
-      shadowRadius:8,
-      elevation:5,
-      justifyContent: 'flex-end',
-      alignItems: 'flex-end',
-      padding:8,
-    },
-    sectionTitle: {
-        fontSize: 24,
-        fontWeight: '600',
+
+    title: {
+      fontFamily:'OpenSans-Bold',
+        fontSize: 32,
       },
+    sectionDetails:{
+      fontFamily:'OpenSans-Regular',
+        fontSize: 18,
+    }
 });
 
 

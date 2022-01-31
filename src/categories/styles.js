@@ -1,11 +1,10 @@
 import {   StyleSheet  } from 'react-native';
   
 const styles = StyleSheet.create({
-    sectionContainer: {
+    container: {
       flex:1,
+      height:100,
+
     },
-    sectionTitle: {
-      fontSize: 24,
-      fontWeight: '600',
-    },
+
   });

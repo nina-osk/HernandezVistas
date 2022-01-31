@@ -7,12 +7,12 @@ import {
 import styles from './styles';
 
 
-const ProductDetails=() => {
+const ProductDetails=({navigation, route}) => {
+  const {product}=route.params;
   return (
-    <SafeAreaView style={styles.sectionContainer}>
-        <View
-          style={styles.sectionTitle}>
-        <Text>ProductDetails!!</Text>
+    <SafeAreaView style={styles.container}>
+        <View      style={styles.container}>
+        <Text style={styles.sectionTitle}>{product.name}</Text>
         </View>
     </SafeAreaView>
   );
