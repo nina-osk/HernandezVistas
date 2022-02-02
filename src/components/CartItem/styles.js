@@ -3,31 +3,28 @@ import {   StyleSheet  } from 'react-native';
 const styles = StyleSheet.create({
     container: {
       flex:1,
-      flexGrow: 0.35,
-      margin:15,
-      justifyContent:'center',
-
-
-    },
-    containerTouchable: {
+      height:'100%',
       borderRadius:6,
-      shadowColor: 'black',
-      shadowOpacity:0.26,
-      shadowOffset:{width:10,height:2},
-      shadowRadius:8,
-      elevation:5,
-      justifyContent: 'center',
-      alignItems: 'center',
-      padding:8,
+      margin:15,
     },
-    sectionTitle: {
+    header:{
+       flex:1 
+    },
+    title: {
       fontFamily:'OpenSans-Bold',
-        fontSize: 20,
+        fontSize: 32,
       },
+    sectionDetails:{
+        flex:1,
+        flexDirection:"row",
+        flexWrap: "wrap",
+        alignItems:"center",
+        justifyContent:"space-between"
+    }
 });
 
-
 export default styles;
+
 
 
 

@@ -16,7 +16,7 @@ navigation.navigate('Products',
     categoryId:item.id, 
     name:item.title,
     color:item.color,
-    product:item
+
      }
    )
 }

@@ -1,4 +1,4 @@
-export const BREADS = [
+export const CART = [
     {
         id: '1',
         category: '1',
@@ -25,23 +25,6 @@ export const BREADS = [
         price: 1100,
         quantity: 2
 
-    },
-    {
-        id: '4',
-        category: '2',
-        name: "Pan de Maíz",
-        description: 'Pan de maíz de harina integral, con una capa de mantequilla, sal y pimienta.',
-        weight: '250gr',
-        price: 1100,
-        quantity: 2
-    },
-    {
-        id: '5',
-        category: '3',
-        name: 'Pan de Soya',
-        description: 'Pan de soya de harina de trigo, con una capa de mantequilla, sal y pimienta.',
-        weight: '300gr',
-        price: 1900,
-        quantity: 1
-    },
+    }
+
 ]

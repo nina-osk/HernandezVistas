@@ -8,7 +8,7 @@ import styles from './styles';
 
 const ProductItem=({item, onSelected}) => {
   return (
- <View>
+ <View style={styles.container} >
         <TouchableOpacity 
           style={styles.container}
             onPress={()=>onSelected(item)}>

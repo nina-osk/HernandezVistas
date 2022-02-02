@@ -8,7 +8,7 @@
 
 import React from 'react'
 
-import AppNavigator from './src/navigation/Appnavigator';
+import AppNavigator from './src/navigation/index';
 
 const App=() => {
   return (

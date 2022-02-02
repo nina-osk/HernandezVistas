@@ -5,6 +5,7 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import styles from './styles';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 const CategoryItem=({item, onSelected}) => {
   return (

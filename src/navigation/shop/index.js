@@ -1,20 +1,19 @@
 import React from 'react';
-import { NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator } from '@react-navigation/native-stack';
-import Categories from '../categories';
-import Products from '../products';
-import ProductDetails from '../productdetails'
+import Categories from '../../categories';
+import Products from '../../products';
+import ProductDetails from '../../productdetails'
 import { Platform } from 'react-native';
 const Stack = createNativeStackNavigator();
-import {COLORS} from '../utils/data/color';
+import {COLORS} from '../../utils/data/color';
 
-const AppNavigator = ()=>{
+const ShopStackNavigation = ()=>{
     return(
-        <NavigationContainer>
+      
             <Stack.Navigator
             initialRouteName='Categories'
             screenOptions={{
-                headerStyle:{
+                headerStylwwe:{
                     backgroundColor: Platform.OS === 'android' ? COLORS.primary: '',
                 },
                 headerTintColor: Platform.OS === 'android' ? 'white' : COLORS.primary,
@@ -46,12 +45,13 @@ const AppNavigator = ()=>{
                     headerStyle:{
                         backgroundColor:route.params.color,
                     },
-                    })}>
+                    })
+                    }>
                 </Stack.Screen>
 
             </Stack.Navigator>
-        </NavigationContainer>
+
         )
 }
 
-export default AppNavigator;
+export default ShopStackNavigation;

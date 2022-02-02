@@ -14,7 +14,7 @@ const Products =({navigation, route})=>{
 const breads = BREADS.filter(breads => breads.category===route.params.categoryId);
 
 const handleSelectedProduct=(item)=>{
-navigation.navigate('ProductsDetails',
+navigation.navigate('ProductDetails',
   {productId:item.id, 
    name:item.name,
    product:item
