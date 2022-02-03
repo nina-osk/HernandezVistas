@@ -5,6 +5,7 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import styles from './styles';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 const CartItem=({item, onDelete}) => {
   return (
@@ -18,7 +19,7 @@ const CartItem=({item, onDelete}) => {
              </View>
         <TouchableOpacity 
         
-            onPress={()=>onSonDelete(item.id)}>
+            onPress={()=>onDelete(item.id)}>
               <Ionicons name="trash-outline" size={20} color="red"/>
         </TouchableOpacity>
         </View>

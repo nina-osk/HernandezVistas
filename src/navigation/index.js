@@ -11,16 +11,21 @@ const AppNavigator = ()=>{
         <NavigationContainer  >
         <BottomTabs.Navigator inicitialRouteName='Shop' screenOptions={{
             headerShown:false,
-            tabBarShowLabel:false
+          
         }}>
             <BottomTabs.Screen 
             name='Shop' 
             component={ShopStackNavigation}
-            option={{
+            options={{
             tabBarIcon:({focussed})=>(
-                <Ionicons name="home-outline" size={20}/>
+                <Ionicons name='home-outline' size={20}/>
             )}}/>
-            <BottomTabs.Screen name='Cart' component={CartStackNavigation}/>
+            <BottomTabs.Screen name='Cart' 
+            component={CartStackNavigation}
+            options={{
+                tabBarIcon:({focussed})=>(
+                    <Ionicons name='cart-outline' size={20}/>
+                )}}/>
         </BottomTabs.Navigator>
         </NavigationContainer>
         )
